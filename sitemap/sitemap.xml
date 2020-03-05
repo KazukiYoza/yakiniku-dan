@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<!--  created with free sitemap generation system www.sitemapxml.jp  --> 
+<url>
+  <loc>http://yakiniku-dan.com/</loc>
+  <priority>1.0</priority>
+  <lastmod>2019-12-28T09:28:44+09:00</lastmod>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://yakiniku-dan.com/index.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-12-28T09:28:44+09:00</lastmod>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://yakiniku-dan.com/index-en.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-12-28T09:28:42+09:00</lastmod>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://yakiniku-dan.com/dinner.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-12-28T09:28:43+09:00</lastmod>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://yakiniku-dan.com/corse.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-12-28T09:28:43+09:00</lastmod>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://yakiniku-dan.com/lunch.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-12-28T09:28:43+09:00</lastmod>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://yakiniku-dan.com/image/top/allergy.pdf</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-12-28T09:29:09+09:00</lastmod>
+  <changefreq>always</changefreq>
+</url>
+
+</urlset>
