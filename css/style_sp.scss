@@ -78,7 +78,7 @@ section {
 
 .inner {
 	width: 100%;
-	max-width: 330px;
+	max-width: 350px;
 	margin: 0 auto;
 
 	@include se {
@@ -124,7 +124,10 @@ section {
 
 #difference .section-en,
 #thought .section-en {
-	font-size: 20px;
+	font-size: 23px;
+}
+#thought .section-en {
+	margin-bottom: 20px;
 }
 
 header {
@@ -140,7 +143,7 @@ header {
 		a {
 			display: block;
 			height: 70px;
-			line-height: 3;
+			line-height: 3.5;
 		}
 	} 
 }
@@ -193,47 +196,56 @@ header {
 }
 
 .reservation {
-	padding: 5px 10px;
-	margin-top: -5px;
-	background-color: #e50012;
+	// padding: 5px 10px;
+	margin: 5px 0 0 5px;
+	// background-color: #e50012;
 	// font-family: "Yu Gothic", YuGothic;
 	font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
 	border-radius: 10px;
 
 	@include tab {
-		padding: 10px;
+		// padding: 10px;
 		// margin: -8px 8px 0 0;
-		margin-top: -10px;
+		// margin-top: -10px;
 	}
 
 	@include se {
 		font-size: 8px;
         padding: 3px;
-        margin: -12px 5px 0 0;
+        // margin: -12px 5px 0 0;
         text-align: center;
 	}
 
 	&-text {
 		color: #fff;
+		font-size: 15px;
+		background-color: #e50012;
+		padding: 8px 10px;
+		border-radius: 5px;
+		font-weight: bold;
 
 		@include tab {
 			font-size: 15px;
+		}
+		@include se{
+			font-size: 11px;
 		}
 	}
 }
 
 .reservation-ja {
+	padding: 8px 17px;
 
 	@include se {
-		padding: 10px;
-		margin: -5px 5px 0 0;
+		// padding: 10px;
+		// margin: -5px 5px 0 0;
 	}
 }
 
 .reservation-en {
 	
 	@include se {
-		margin-top: -10px;
+		margin-top: 10px;
 	}
 }
 
@@ -287,12 +299,11 @@ header {
 .header-nav__menu-button {
     display: block;
     float: right;
-	// margin: 0 auto;
-	margin: -3px auto 0;
+	margin: 0 auto;
+	// margin: -3px auto 0;
     position: relative;
-    width: 40px;
-	// height: 30px;
-	height: 35px;
+    width: 38px;
+	height: 30px;
 	font-size: 10px;
 	color: #000;
 
@@ -318,7 +329,7 @@ header {
 
 		&:nth-of-type(2){
 			// top: 13px;
-			top: 15px;
+			top: 12px;
 		}
 
 		&:nth-of-type(3){
@@ -330,7 +341,7 @@ header {
 		position: absolute;
 		// bottom: -15px;
 		bottom: -17px;
-		left: 5px;
+		left: 3px;
 		font-size: 95%;
 	}
 }
@@ -388,10 +399,11 @@ header {
 .header-nav__language-button {
 	width: 45px;
 	height: 45px;
-	margin-top: -11px;	
+	// margin-top: -4px;	
 	object-fit: cover;
 	font-size: 10px;
 	color: #000;
+	text-align: center;
 }
 .language-button_en {
 	margin-right: 5px;
@@ -399,7 +411,11 @@ header {
 
 .header-nav__language-list {
 	display: none;
-	text-align: center;
+	margin: 0 auto;
+}
+.header-nav__language-button__image{
+	width: 30px;
+	margin: 0 auto;
 }
 
 .header-nav__language-item {
@@ -493,13 +509,17 @@ header {
 			border-left: 4px solid #fff;
 
 			&_sub {
-				font-size: 12px;
+				font-size: 11px;
 				display: block;
 			}
 		}
 
 		.difference-title_en {
 			height: 45px;
+			padding: 5% 1%;
+		}
+		.style-effect_2column{
+			padding: 1% 0;
 		}
 
 		.js-modal-open {
@@ -546,6 +566,9 @@ header {
 
 	&-list__item {
 		margin-bottom: 50px;
+	}
+	&-list__item:last-of-type{
+		margin-bottom: 15px;
 	}
 
 	&-title {
@@ -807,11 +830,11 @@ header {
 		max-width: 705px;
 	}
 	&-img {
-		width: 150px;
-		margin: 0 0 0 195px;
+		width: 130px;
+		margin: 0 0 0 auto;
 
 		@include se {
-			margin: 0 0 0 150px;
+			margin: 0 0 0 auto;
 		}
 	}
 }
@@ -867,7 +890,7 @@ header {
 
 		&-text {
 			margin-left: 5px;
-			font-size: 14px;
+			font-size: calc(4vw - 3px);
 			font-family: "游明朝", YuMincho, 'Noto Serif JP', serif;
 
 			@include se {
@@ -876,7 +899,8 @@ header {
 		}
 
 		.style-effect {
-			padding-top: 11px;
+			// padding-top: 11px;
+			padding: 2% 0;
 		}
 
 		.style-effect_2 {
@@ -885,7 +909,12 @@ header {
 		}
 
 		.style-effect_3 {
-			padding-top: 20px;
+			// padding-top: 20px;
+			padding: 7.5% 0;
+		}
+		.style-effect_4{
+		display: inline-block;
+		margin-bottom: 10px;
 		}
 
 		.style-effect_se {

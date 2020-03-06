@@ -1,0 +1,17 @@
+.commit-list {
+    margin-left: 20px;
+}
+
+.menu-list__item a .menu-list__item-title {
+    padding-top: 14px; 
+}
+
+.store-inner .store-details__item:nth-child(2) > .store-details__item-text{
+    line-height: 1.1;
+}
+@media screen and (max-width: 768px){
+    .store-inner .store-details__item:nth-child(2) > .store-details__item-text{
+        line-height: 1.1;
+        padding: 2% 0;
+    }
+}
