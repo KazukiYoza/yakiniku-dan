@@ -180,6 +180,7 @@ header .header-logo a {
 .reservation {
   padding: 5px 10px;
   margin-top: -5px;
+  width: 95px;
   background-color: #e50012;
   border-radius: 10px;
   font-family: "Yu Gothic", YuGothic;
@@ -201,6 +202,11 @@ header .header-logo a {
   .reservation-text {
     font-size: 12px;
   }
+}
+
+.reservation-ja {
+  padding: 0 5px;
+  letter-spacing: 3.5px;
 }
 
 .dropdown-menu__list {
@@ -358,6 +364,10 @@ header .header-logo a {
   margin: 20px auto 40px;
   width: 100%;
   max-width: 550px;
+}
+
+.commit-list-en {
+  margin-left: 20px;
 }
 
 .commit-list_item {
@@ -646,6 +656,11 @@ header .header-logo a {
 }
 
 .thought-img {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.thought-img p {
   width: 150px;
   margin: 0 0 0 auto;
 }

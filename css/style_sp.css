@@ -88,7 +88,7 @@ section {
   border-top: 2px solid #b7a15f;
   border-bottom: 2px solid #b7a15f;
   font-family: "游明朝", YuMincho, 'Noto Serif JP', serif;
-  font-size: 23px;
+  font-size: 25px;
   font-weight: bold;
   color: #b7a15f;
   text-align: center;
@@ -109,7 +109,7 @@ section {
 
 #difference .section-en,
 #thought .section-en {
-  font-size: 23px;
+  font-size: 25px;
 }
 
 #thought .section-en {
@@ -223,6 +223,7 @@ header .header-logo a {
 
 .reservation-ja {
   padding: 8px 17px;
+  letter-spacing: 2px;
 }
 
 @media (max-width: 320px) {
@@ -447,7 +448,7 @@ header .header-logo a {
 
 .commit-title {
   margin: 20px auto 40px;
-  max-width: 330px;
+  max-width: 350px;
   width: 100%;
 }
 
@@ -793,7 +794,7 @@ header .header-logo a {
 }
 
 .thought-text {
-  max-width: 310px;
+  max-width: 350px;
   width: 95%;
   margin: 0 auto;
   line-height: 2;
@@ -805,6 +806,11 @@ header .header-logo a {
 }
 
 .thought-img {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.thought-img p {
   width: 130px;
   margin: 0 0 0 auto;
 }

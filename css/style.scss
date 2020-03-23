@@ -194,6 +194,7 @@ header {
 .reservation {
 	padding: 5px 10px;
 	margin-top: -5px;
+	width: 95px;
 	background-color: #e50012;
 	border-radius: 10px;
 	font-family: "Yu Gothic", YuGothic;
@@ -211,6 +212,11 @@ header {
 		@include tab {
 			font-size: 12px;
 		}
+	}
+
+	&-ja{
+		padding: 0 5px;
+	    letter-spacing: 3.5px;
 	}
 }
 
@@ -367,6 +373,9 @@ header {
 		margin: 20px auto 40px;
 		width: 100%;
 		max-width: 550px;
+	}
+	&-list-en{
+		margin-left: 20px;
 	}
 
 	&-list_item {
@@ -647,8 +656,12 @@ header {
 		max-width: 705px;
 	}
 	&-img {
-		width: 150px;
-		margin: 0 0 0 auto;
+		max-width: 850px;
+		margin: 0 auto;
+		p {
+			width: 150px;
+			margin: 0 0 0 auto;
+		}
 	}
 }
 .img-area{
