@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="Content-Script-Type" content="text/javascript">
-    <meta name="keywords" content="Okinawa Wagyu,Domestic vegetables,Homemade sauce,Homemade soup,Homemade kimchi,lunch,dinner,Naha,Oroku,YAKINIKU STUDIO DAN">
-    <meta name="description" content="In order to provide customers with 'taste that cannot be eaten at home' and 'can be eaten with peace of mind' and above all, 'Okinawa Wagyu' and specialty sauces and vegetables that match the meat are provided.">
-    <title>DINNER MENU | YAKINIKU STUDIO DAN</title>
+    <meta name="keywords" content="おきなわ和牛,国産野菜,自家製ダレ,自家製スープ,自家製キムチ,ランチ,ディナー,那覇市,小禄,焼肉工房「團」">
+    <meta name="description" content="お客様が「家庭では食べられない味」「安心して食べられる」 そして、なによりも「美味しい」と言って頂けるように「おきなわ和牛」とその肉に合うタレや野菜にまでこだわり提供いたします。">
+    <title>コースメニュー | 焼肉工房「團」</title>
     <link rel="stylesheet" href="../css/sanitize.css">
     <link rel="stylesheet" href="../css/slick_sp.css">
     <link rel="stylesheet" href="../css/slick-theme_sp.css">
@@ -21,23 +21,23 @@
     <header>
         <div class="header_inner">
             <div class="header-logo">
-                <a href="../index-en.php">
-                    <img src="../image/top/logo.png" alt="YAKINIKU STUDIO DAN">
+                <a href="/index.html">
+                    <img src="../image/top/logo.png" alt="焼肉工房「團」">
                 </a>
             </div>
             <nav>
                 <ul class="header-nav__list">
                     <li class="header-nav__list-item">
-                        <a href="#menu" class="header-nav__list-item__text">Menu</a>
+                        <a href="#menu" class="header-nav__list-item__text">菜單</a>
                     </li>
                     <li class="header-nav__list-item">
-                        <a href="#introduction" class="header-nav__list-item__text">Store information</a>
+                        <a href="#introduction" class="header-nav__list-item__text">店鋪資訊</a>
                     </li>
                     <li class="header-nav__list-item">
-                        <a href="#info" class="header-nav__list-item__text">Notice</a>
+                        <a href="#info" class="header-nav__list-item__text">最新消息</a>
                     </li>
                     <li class="header-nav__list-item">
-                        <a href="#store" class="header-nav__list-item__text">Contact</a>
+                        <a href="#store" class="header-nav__list-item__text">聯絡我們</a>
                     </li>
                     <li class="header-nav__list-item dropdown-menu">
                         <a class="header-nav__list-item__text dropdown-menu__title"><i class="fas fa-globe"></i>Language</a>
@@ -50,14 +50,20 @@
                             </li>
                             <li class="dropdown-menu__list-item">
                                 <a href="../index.php" class="dropdown-menu__list-item__link">
-                                    Japanese
+                                    日本語
                                     <i class="fas fa-chevron-right"></i>
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <li class="reservation">
-                        <a href="#" class="reservation-text">Online booking</a>
+                        <a href="#" class="reservation-text reservation-ja">線上預約</a>
+                    </li>
+                    <li>
+                        <div class="header-nav__language-button">
+                            <p class="header-nav__language-button__image"><img src="../image/top/language.png" alt=""></p>
+                            <span>language</span>
+                        </div>
                     </li>
                     <li>
                         <!-- ドロワーメニュー -->
@@ -65,6 +71,7 @@
                             <span></span>
                             <span></span>
                             <span></span>
+                            <small>MENU</small>
                         </div> 
                     </li>
                 </ul>
@@ -73,60 +80,64 @@
         <div class="header-nav__menu">
             <ul class="header-nav__menu-list">
                 <li class="header-nav__menu-item">
-                    <a href="#commit" class="header-nav__menu-item__text">The commitment of the Yakiniku workshop "Dan"</a>
+                    <a href="#commit" class="header-nav__menu-item__text">燒肉團的堅持</a>
                 </li>
                 <li class="header-nav__menu-item">
-                    <a href="#part" class="header-nav__menu-item__text">Taste of each part</a>
+                    <a href="#part" class="header-nav__menu-item__text">不同部位的風味</a>
                 </li>
                 <li class="header-nav__menu-item">
-                    <a href="#difference" class="header-nav__menu-item__text">About "wagyu" and "domestic beef"</a>
+                    <a href="#difference" class="header-nav__menu-item__text">和牛跟日本國產牛的不同</a>
                 </li>
                 <li class="header-nav__menu-item">
-                    <a href="#menu" class="header-nav__menu-item__text">Menu</a>
+                    <a href="#menu" class="header-nav__menu-item__text">菜單</a>
                 </li>
                 <li class="header-nav__menu-item">
-                    <a href="#allergy" class="header-nav__menu-item__text">About allergy</a>
+                    <a href="#allergy" class="header-nav__menu-item__text">食物過敏</a>
                 </li>
                 <li class="header-nav__menu-item">
-                    <a href="#info" class="header-nav__menu-item__text">News</a>
+                    <a href="#introduction" class="header-nav__menu-item__text">店舖資訊</a>
                 </li>
                 <li class="header-nav__menu-item">
-                    <a href="#introduction" class="header-nav__menu-item__text">Store introduction</a>
+                    <a href="#info" class="header-nav__menu-item__text">最新消息</a>
                 </li>
                 <li class="header-nav__menu-item">
-                    <a href="#thought" class="header-nav__menu-item__text">Vision of Yakiniku Studio "dan"</a>
+                    <a href="#thought" class="header-nav__menu-item__text">我們的理想</a>
                 </li>
                 <li class="header-nav__menu-item">
-                    <a href="#access" class="header-nav__menu-item__text">Access</a>
+                    <a href="#access" class="header-nav__menu-item__text">交通方式</a>
                 </li>
                 <li class="header-nav__menu-item">
-                    <a href="#store" class="header-nav__menu-item__text">Store information</a>
+                    <a href="#store" class="header-nav__menu-item__text">店鋪資訊</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="header-nav__language">
+            <ul class="header-nav__language-list">
+                <li class="header-nav__language-item">
+                    <a href="./index-en_sp.html" class="header-nav__language-item__text">English</a>
+                </li>
+                <li class="header-nav__language-item">
+                    <a href="#" class="header-nav__language-item__text">Japanese</a>
+                </li>
+                <li class="header-nav__language-item">
+                    <a href="#" class="header-nav__language-item__text">Chinese</a>
                 </li>
             </ul>
         </div>
 
     </header>
-    <!-- header end -->
-
-    <!-- img -->
+        <!-- header end -->
+    <!-- main -->
     <main>
-        <div class="wrap padding">
-            <ul class="menu_list">
-                <li><img src="../image/english/dinner/dinner_1_en.jpg" alt="YAKINIKU STUDIO DAN dinner menu"></li>
-                <li><img src="../image/english/dinner/dinner_2_en.jpg" alt="YAKINIKU STUDIO DAN dinner menu"></li>
-                <li><img src="../image/english/dinner/dinner_3_en.jpg" alt="YAKINIKU STUDIO DAN dinner menu"></li>
-                <li><img src="../image/english/dinner/dinner_4_en.jpg" alt="YAKINIKU STUDIO DAN dinner menu"></li>
-                <li><img src="../image/english/dinner/dinner_5_en.jpg" alt="YAKINIKU STUDIO DAN dinner menu"></li>
-                <li><img src="../image/english/dinner/dinner_6_en.jpg" alt="YAKINIKU STUDIO DAN dinner menu"></li>
-                <li><img src="../image/english/dinner/dinner_7_en.jpg" alt="YAKINIKU STUDIO DAN dinner menu"></li>
-                <li><img src="../image/english/dinner/dinner_8_en.jpg" alt="YAKINIKU STUDIO DAN dinner menu"></li>
-                <li><img src="../image/english/dinner/dinner_9_en.jpg" alt="YAKINIKU STUDIO DAN dinner menu"></li>
-                <li><img src="../image/english/dinner/dinner_10_en.jpg" alt="YAKINIKU STUDIO DAN dinner menu"></li>
-            </ul>
 
+        <div class="wrap padding">
+            <img src="../image/chinese/corse/corse_ch.jpg" alt="焼肉工房「團」 コースメニュー一覧">
         </div>
-        
+
     </main>
+    <!-- main end -->
+
 
 
     
