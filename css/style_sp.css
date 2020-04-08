@@ -227,6 +227,12 @@ header .header-logo a {
 }
 
 @media (max-width: 320px) {
+  .reservation-ja {
+    padding: 9px 10px;
+  }
+}
+
+@media (max-width: 320px) {
   .reservation-en {
     margin-top: 10px;
   }
@@ -885,12 +891,16 @@ header .header-logo a {
 }
 
 .store-inner .store-details__item .style-effect_3 {
-  padding: 7.5% 0;
+  padding: 8.5% 0;
 }
 
 .store-inner .store-details__item .style-effect_4 {
   display: inline-block;
   margin-bottom: 10px;
+}
+
+.store-inner .store-details__item .style-effect_5 {
+  padding: 2% 0;
 }
 
 @media (max-width: 320px) {

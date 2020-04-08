@@ -238,7 +238,7 @@ header {
 	letter-spacing: 2px;
 
 	@include se {
-		// padding: 10px;
+		padding: 9px 10px;
 		// margin: -5px 5px 0 0;
 	}
 }
@@ -915,13 +915,16 @@ header {
 
 		.style-effect_3 {
 			// padding-top: 20px;
-			padding: 7.5% 0;
+			padding: 8.5% 0;
 		}
 		.style-effect_4{
-		display: inline-block;
-		margin-bottom: 10px;
+			display: inline-block;
+			margin-bottom: 10px;
 		}
-
+		.style-effect_5{
+			// line-height: 1.1;
+        	padding: 2% 0;
+		}
 		.style-effect_se {
 			@include se {
 				padding-top: 15px;
