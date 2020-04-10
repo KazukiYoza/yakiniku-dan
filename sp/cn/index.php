@@ -48,7 +48,7 @@
         <header>
             <div class="header_inner">
                 <div class="header-logo">
-                    <a href="/index.html">
+                    <a href="./">
                         <img src="../image/top/logo.png" alt="焼肉工房「團」">
                     </a>
                 </div>
@@ -142,13 +142,13 @@
             <div class="header-nav__language">
                 <ul class="header-nav__language-list">
                     <li class="header-nav__language-item">
-                        <a href="./index-en_sp.html" class="header-nav__language-item__text">English</a>
+                        <a href="../en" class="header-nav__language-item__text">English</a>
                     </li>
                     <li class="header-nav__language-item">
-                        <a href="#" class="header-nav__language-item__text">Japanese</a>
+                        <a href="../" class="header-nav__language-item__text">Japanese</a>
                     </li>
                     <li class="header-nav__language-item">
-                        <a href="#" class="header-nav__language-item__text">Chinese</a>
+                        <a href="./" class="header-nav__language-item__text">Chinese</a>
                     </li>
                 </ul>
             </div>
