@@ -16,6 +16,31 @@
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./image/top/favicon.png">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5SJQPDF');</script>
+    <!-- End Google Tag Manager -->
+    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SJQPDF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155095088-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-155095088-1');
+    </script>
 </head>
 <body>
     <div class="container">
@@ -298,7 +323,7 @@
 
 
             <!-- info -->
-            <section id="info" class="info">
+            <!-- <section id="info" class="info">
                 <h6 class="info-title">News</h6>
                 <ul class="info-list">
                     <li class="info-list__item">
@@ -326,9 +351,158 @@
                         </dl>
                     </li>
                 </ul>
-            </section>
+            </section> -->
             <!-- info end -->
 
+            <!-- info -->
+            <?php 
+            //▼▼ 既存ページヘ埋め込み時はまるっとコピペ下さい （この行も含みページ最上部に）※.phpでかつUTF-8のページのみ可▼▼
+            //※このページに対して既存のページのhtmlを記述する形でももちろんOKです。
+            //----------------------------------------------------------------------
+            // トップページ表示用ページ
+            // 設定ファイルの読み込みとページ独自設定
+            //----------------------------------------------------------------------
+            include_once("./information/pkobo_news/admin/include/config.php");//（必要に応じてパスは適宜変更下さい）
+            $img_updir = './information/pkobo_news/upload';//画像保存パス（必要に応じてパスは適宜変更下さい）
+
+            /* ▽オプション設定▽ */
+
+            //表示件数
+            $config['dspNum'] = 5;
+
+            //本文の抜粋を表示するかどうか（0=しない、1=する）
+            $commentDsp = 0;
+
+            //本文を抜粋表示する場合の表示文字数 （単位はバイト。全角文字は「2バイト」で1文字となります。また末尾の文字「...」も含みます）
+            //※htmlタグは削除されます「0」にすれば全文をhtmlもそのままで表示します。（レイアウトに問題が出る可能性があるのでオススメしません）
+            $commentNum = 200;
+
+            //サムネイルを表示するか（0=しない、1=する）※アップファイルの1枚目が画像の場合のみ有効
+            $dspThumbNail = 0;
+
+            //表示するカテゴリを指定（指定なし（空）の場合は全件表示 ※デフォルト）
+            //このページで特定カテゴリのみ表示したい場合、0からの番号を指定下さい。 （1番目が0，2番目が1になるので注意）
+            //要するに複数のカテゴリがある場合でそれぞれ別々のファイルで表示したい場合用です
+            //このファイルを複製すればOKです（カテゴリごとにデザインを変えたい場合など）
+            //例　$category = '1'; ※この場合カテゴリ番号「1」（設定ファイルでの2番目）の記事のみが表示されます
+            $category = '';
+            //またはURLのパラメータでも指定可能です。番号ルールは↑と同じです。例　URLに ?cat=0 や ?cat=1 を追加するだけです
+            //1ファイルでパラメータを変えるだけでそれぞれのカテゴリを表示できるので便利です。（全カテゴリでデザインは共通で良い場合）
+
+            //----------------------------------------------------------------------
+            // 設定ファイルの読み込みとページ独自設定
+            //----------------------------------------------------------------------
+            //▲▲ コピペここまで ▲▲（この行も含む）
+            ?>
+
+            <!--▼▼CSSとポップアップ用JS。トップページ埋め込み時　要コピペ（head部分）▼▼-->
+            <style type="text/css">
+            /* CSSは必要最低限しか指定してませんのでお好みで（もちろん外部化OK） */
+
+            /* clearfix */
+            .clearfix:after { content:"."; display:block; clear:both; height:0; visibility:hidden; }
+            .clearfix { display:inline-block; }
+
+            /* for macIE \*/
+            * html .clearfix { height:1%; }
+            .clearfix { display:block; }
+
+            ul#newsList{
+                margin:0 0 15px;
+                padding:0;
+                font-family:"メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+            }
+            ul#newsList li{
+                color:#666;
+                font-size:12px;
+                margin:0;
+                padding:5px 0;
+                margin-bottom:3px;
+                border-bottom:1px dotted #ccc;
+                line-height:120%;
+                list-style-type:none;
+            }
+            .info-list__text a{color:#36F;text-decoration:underline;}
+            .info-list__text a:hover{color:#039;text-decoration:none;}
+
+            .catName{
+                display:inline-block;
+                padding:3px 8px;
+                border:1px solid #ccc;
+                border-radius:6px;
+                font-size:11px;
+                line-height:100%;
+                margin:0 2px;
+            }
+            .newMark{
+                display:inline-block;
+                border:1px solid #F00;
+                padding:1px 4px;
+                font-size:11px;
+                line-height:100%;
+                background:#F00;
+                color:#fff;
+                box-shadow:1px 1px 1px #999;
+                border-radius:8px;
+                font-style:italic;
+            }
+            .comment{
+                display:block;
+                padding:3px 0;
+                float:left;
+                overflow:hidden;
+                width:500px;/* 本文部分の幅。ここは特に設置ページ合わせて変更下さい */
+            }
+            .thumbNailWrap{
+                display:block;
+                width:110px;
+                float:left;
+                height:80px;
+                overflow:hidden;
+            }
+            #info a:link,
+            #info a:visited,
+            #info a:hover,
+            #info a:active {
+                color: #fff;
+            }
+            </style>
+
+            <script type="text/javascript">
+            <!--
+            function openwin(url) {//詳細ページ用ポップアップ。ウインドウの幅、高さなど自由に編集できます（ポップアップで開く場合のみコピペ下さい）
+                wn = window.open(url, 'win','width=680,height=550,status=no,location=no,scrollbars=yes,directories=no,menubar=no,resizable=no,toolbar=no');
+                wn.focus();
+            }
+            -->
+            </script>
+
+            <section id="info" class="info">
+                <div class="inner-2">
+                    <h6 class="info-title">News</h6>
+                    <ul class="info-list">
+
+                        <?php 
+                        if(!$copyright){
+                            echo $warningMesse;exit;
+                        }else{
+                            $getFormatDataArr = getLines2DspData($file_path,$img_updir,$config,'',$category);
+                            foreach($getFormatDataArr as $key => $data){
+                        ?>
+
+                        <li class="info-list__item cat-<?php echo $data['categoryNum'];?>" id="postID_<?php echo $data['id'];?>">
+                            <dl>
+                                <dt class="info-list__day"><?php echo $data['up_ymd'];//日付表示?></dt>
+                                <dd class="info-list__text"><?php echo $data['title'];//タイトル表示?></dd>
+                            </dl>
+                        </li>
+
+                        <?php } ?>
+                        <?php echo $copyright;}//著作権表記削除不可?>
+                    </ul>
+                </div>
+            </section>
+            <!-- /info end -->
 
             <!-- though -->
             <section id="thought" class="thought">
