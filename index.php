@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="Content-Script-Type" content="text/javascript">
-    <meta name="google-site-verification" content="8l6F4cGmmUCUwD3XwhBkTaBQONyOU-ylz3JXPH4kfSg"/>
     <meta name="keywords" content="おきなわ和牛,国産野菜,自家製ダレ,自家製スープ,自家製キムチ,ランチ,ディナー,那覇市,小禄,焼肉工房「團」">
     <meta name="description" content="お客様が「家庭では食べられない味」「安心して食べられる」 そして、なによりも「美味しい」と言って頂けるように「おきなわ和牛」とその肉に合うタレや野菜にまでこだわり提供いたします。">
     <title>焼肉工房「團」</title>
@@ -48,7 +47,7 @@
         <header>
             <div class="header_inner">
                 <div class="header-logo">
-                    <a href="./">
+                    <a href="/index.html">
                         <img src="./image/top/logo.png" alt="焼肉工房「團」">
                     </a>
                 </div>
@@ -76,15 +75,21 @@
                                     </a>
                                 </li>
                                 <li class="dropdown-menu__list-item">
-                                    <a href="./" class="dropdown-menu__list-item__link">
+                                    <a href="./index.php" class="dropdown-menu__list-item__link">
                                         日本語
+                                        <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                </li>
+                                <li class="dropdown-menu__list-item">
+                                    <a href="./index-ch.php" class="dropdown-menu__list-item__link">
+                                        中文(繁体字)
                                         <i class="fas fa-chevron-right"></i>
                                     </a>
                                 </li>
                             </ul>
                         </li>
                         <li class="reservation">
-                            <a href="#" class="reservation-text">オンライン予約</a>
+                            <a href="#" class="reservation-text reservation-ja">ご予約</a>
                         </li>
                         <li>
                             <!-- ドロワーメニュー -->
@@ -115,10 +120,10 @@
                         <a href="#allergy" class="header-nav__menu-item__text">アレルギーについて</a>
                     </li>
                     <li class="header-nav__menu-item">
-                        <a href="#info" class="header-nav__menu-item__text">information</a>
+                        <a href="#introduction" class="header-nav__menu-item__text">店舗紹介</a>
                     </li>
                     <li class="header-nav__menu-item">
-                        <a href="#introduction" class="header-nav__menu-item__text">店内</a>
+                        <a href="#info" class="header-nav__menu-item__text">information</a>
                     </li>
                     <li class="header-nav__menu-item">
                         <a href="#thought" class="header-nav__menu-item__text">焼肉工房「團」の想い</a>
@@ -235,7 +240,7 @@
                         <a href="./menu/dinner.html">
                             <img src="./image/top/dinner.jpg" alt="焼肉工房「團」 ディナーメニュー">
                             <h5 class="menu-list__item-title">ディナー</h5>
-                            <p class="menu-list__item-title__text">ロースやカルビ、イチボなど、和牛の希少部位から素材にこだわったサイドメニューまで楽しめます。</p>
+                            <p class="menu-list__item-title__text">ロースやカルビ、イチボなど、和牛の起床部位から素材にこだわったサイドメニューまで楽しめます。</p>
                         </a>
                     </li>
                     <li class="menu-list__item">
@@ -279,7 +284,7 @@
                             <li><img src="./image/introduction/madogawatablesaki.jpg" alt="" /></li>
                             <li><img src="./image/introduction/horigotatsuseki.jpg" alt="" /></li>
                             <li><img src="./image/introduction/zashikiseki.jpg" alt="" /></li>                            
-                            <li><img src="./image/introduction/naikanzentai.jpg" alt="" /></li>   
+                            <li><img src="./image/introduction/naikanzentai.jpg" alt="" /></li>                             
                         </ul>
                     </div><!--/#slide_main-->
                         
@@ -290,7 +295,7 @@
                             <li><img src="./image/introduction/madogawatablesaki.jpg" alt="" /></li>
                             <li><img src="./image/introduction/horigotatsuseki.jpg" alt="" /></li>
                             <li><img src="./image/introduction/zashikiseki.jpg" alt="" /></li>                            
-                            <li><img src="./image/introduction/naikanzentai.jpg" alt="" /></li>   
+                            <li><img src="./image/introduction/naikanzentai.jpg" alt="" /></li> 
                         </ul>
                         <p class="introduction-text">お一人様や少人数向けのテーブル席をはじめ、最大30名様までご利用いただける掘りごたつ席など人数やシーンに合わせてご利用いただけます。</p>
 
@@ -330,6 +335,7 @@
                     </li>
                 </ul>
             </section> -->
+            <!-- info end -->
 
             <!-- info -->
             <?php 
@@ -482,7 +488,6 @@
             <!-- /info end -->
             <!-- info end -->
 
-
             <!-- though -->
             <section id="thought" class="thought">
                 <h2 class="section-title">焼肉工房「團」の想い</h2>
@@ -490,10 +495,10 @@
                     創業者である親川幸男は、お客様が「家庭では食べられない味」「安心して食べられる」
                     そして、なによりも「美味しい」と言って頂けるように「おきなわ和牛」とその肉に合うタレや野菜にまでこだわりました。
                     私たちは、先代の想いをしっかりと受け継ぎながら店名である「團」の文字がもつ【穏やか・あつまる：】の意味のごとくいつの時代も、
-                    テーブルを囲んで美味しいお肉を頬張りながら、会話を弾ませて頂けるような焼肉店であるよう、これからも日々精進して参ります。
+                    テーブルを囲んで美味いお肉を頬張りながら、会話を弾ませて頂けるような焼肉店であるよう、これからも日々精進して参ります。
                 </p>
                 <div class="thought-img">
-                    <img src="./image/top/logo-2.png" alt="焼肉工房「團」">
+                    <p><img src="./image/top/logo-2.png" alt="焼肉工房「團」"></p>
                 </div>
             </section>
             <!-- though -->
@@ -538,7 +543,7 @@
                         <dl class="store-details__item">
                             <dt class="store-details__item-title">TEL</dt>
                             <dd class="store-details__item-text">
-                                <a href="tel:0988578919" class="tel">098-857-8919</a>
+                                <a href="tel:05034764726" class="tel">050-3476-4726</a>
                             </dd>
                         </dl>
                         <dl class="store-details__item">

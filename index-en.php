@@ -5,41 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="Content-Script-Type" content="text/javascript">
-    <meta name="google-site-verification" content="8l6F4cGmmUCUwD3XwhBkTaBQONyOU-ylz3JXPH4kfSg"/>
-    <meta name="keywords" content="Okinawa Wagyu,Domestic vegetables,Homemade sauce,Homemade soup,Homemade kimchi,lunch,dinner,Naha,Oroku,YAKINIKU STUDIO DAN">
-    <meta name="description" content="In order to provide customers with 'taste that cannot be eaten at home' and 'can be eaten with peace of mind' and above all, 'Okinawa Wagyu' and specialty sauces and vegetables that match the meat are provided.">
+    <meta name="keywords" content="おきなわ和牛,国産野菜,自家製ダレ,自家製スープ,自家製キムチ,ランチ,ディナー,那覇市,小禄,焼肉工房「團」">
+    <meta name="description" content="お客様が「家庭では食べられない味」「安心して食べられる」 そして、なによりも「美味しい」と言って頂けるように「おきなわ和牛」とその肉に合うタレや野菜にまでこだわり提供いたします。">
     <title>YAKINIKU STUDIO DAN</title>
     <link rel="stylesheet" href="./css/sanitize.css">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/slick-theme.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/english.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./image/top/favicon.png">
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-5SJQPDF');</script>
-        <!-- End Google Tag Manager -->
-        
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SJQPDF"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
-        
-        
-        
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155095088-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'UA-155095088-1');
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5SJQPDF');</script>
+    <!-- End Google Tag Manager -->
+    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SJQPDF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155095088-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-155095088-1');
     </script>
 </head>
 <body>
@@ -48,8 +48,8 @@
         <header>
             <div class="header_inner">
                 <div class="header-logo">
-                    <a href="./index-en.php">
-                        <img src="./image/top/logo.png" alt="yakiniku studio[dan]">
+                    <a href="./index-en.html">
+                        <img src="./image/top/logo.png" alt="焼肉工房「團」">
                     </a>
                 </div>
                 <nav>
@@ -61,7 +61,7 @@
                             <a href="#introduction" class="header-nav__list-item__text">Store information</a>
                         </li>
                         <li class="header-nav__list-item">
-                            <a href="#info" class="header-nav__list-item__text">Notice</a>
+                            <a href="#info" class="header-nav__list-item__text">News</a>
                         </li>
                         <li class="header-nav__list-item">
                             <a href="#store" class="header-nav__list-item__text">Contact</a>
@@ -70,21 +70,27 @@
                             <a class="header-nav__list-item__text dropdown-menu__title"><i class="fas fa-globe"></i>Language</a>
                             <ul class="dropdown-menu__list">
                                 <li class="dropdown-menu__list-item">
-                                    <a href="./index-en.php" class="dropdown-menu__list-item__link">
+                                    <a href="./index-en.html" class="dropdown-menu__list-item__link">
                                         English
                                         <i class="fas fa-chevron-right"></i>
                                     </a>
                                 </li>
                                 <li class="dropdown-menu__list-item">
-                                    <a href="./" class="dropdown-menu__list-item__link">
+                                    <a href="./index.html" class="dropdown-menu__list-item__link">
                                         Japanese
+                                        <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                </li>
+                                <li class="dropdown-menu__list-item">
+                                    <a href="./index-ch.html" class="dropdown-menu__list-item__link">
+                                        Chinese
                                         <i class="fas fa-chevron-right"></i>
                                     </a>
                                 </li>
                             </ul>
                         </li>
                         <li class="reservation">
-                            <a href="#" class="reservation-text">Online booking</a>
+                            <a href="#" class="reservation-text">Booking</a>
                         </li>
                         <li>
                             <!-- ドロワーメニュー -->
@@ -100,34 +106,34 @@
             <div class="header-nav__menu">
                 <ul class="header-nav__menu-list">
                     <li class="header-nav__menu-item">
-                        <a href="#commit" class="header-nav__menu-item__text">The commitment of the Yakiniku workshop "Dan"</a>
+                        <a href="#commit" class="header-nav__menu-item__text">Our Commitment</a>
                     </li>
                     <li class="header-nav__menu-item">
-                        <a href="#part" class="header-nav__menu-item__text">Taste of each part</a>
+                        <a href="#part" class="header-nav__menu-item__text">Japanese Beef Chart</a>
                     </li>
                     <li class="header-nav__menu-item">
                         <a href="#difference" class="header-nav__menu-item__text">About "wagyu" and "domestic beef"</a>
                     </li>
                     <li class="header-nav__menu-item">
-                        <a href="#menu" class="header-nav__menu-item__text">Menu</a>
+                        <a href="#menu" class="header-nav__menu-item__text">MENU</a>
                     </li>
                     <li class="header-nav__menu-item">
-                        <a href="#allergy" class="header-nav__menu-item__text">About allergy</a>
+                        <a href="#allergy" class="header-nav__menu-item__text">About food allergies</a>
+                    </li>
+                    <li class="header-nav__menu-item">
+                        <a href="#introduction" class="header-nav__menu-item__text">About us</a>
                     </li>
                     <li class="header-nav__menu-item">
                         <a href="#info" class="header-nav__menu-item__text">News</a>
                     </li>
                     <li class="header-nav__menu-item">
-                        <a href="#introduction" class="header-nav__menu-item__text">Store introduction</a>
-                    </li>
-                    <li class="header-nav__menu-item">
-                        <a href="#thought" class="header-nav__menu-item__text">Vision of Yakiniku Studio "dan"</a>
+                        <a href="#thought" class="header-nav__menu-item__text">Our hope</a>
                     </li>
                     <li class="header-nav__menu-item">
                         <a href="#access" class="header-nav__menu-item__text">Access</a>
                     </li>
                     <li class="header-nav__menu-item">
-                        <a href="#store" class="header-nav__menu-item__text">Store information</a>
+                        <a href="#store" class="header-nav__menu-item__text">Information</a>
                     </li>
                 </ul>
             </div>
@@ -138,13 +144,13 @@
         <div class="slider">
             <ul class="slide_list">
                 <li>
-                    <img src="./image/main/slider-1.jpg" alt="yakiniku studio[dan] appearance">
+                    <img src="./image/main/slider-1.jpg" alt="">
                 </li>
                 <li> 
-                    <img src="./image/main/slider-2.jpg" alt="yakiniku studio[dan]">
+                    <img src="./image/main/slider-2.jpg" alt="">
                 </li>
                 <li>
-                    <img src="./image/main/slider-3.jpg" alt="yakiniku studio[dan]">
+                    <img src="./image/main/slider-3.jpg" alt="">
                 </li>
             </ul>
         </div>
@@ -163,35 +169,38 @@
                             <img src="./image/english/top/commit-title_en.jpg" alt="焼肉工房「團」 こだわり">
                         </h1>
                     </div>
-                    <ul class="commit-list">
+                    <ul class="commit-list commit-list-en">
                         <li class="commit-list_item">
-                            <h3 class="commit-item__title">Providing high quality Wagyu beef, mainly Okinawa Wagyu</h3>
+                            <h3 class="commit-item__title">Provide Okinawa Wagyu and other high quality Wagyu beef </h3>
                             <p>
-                                We offer carefully selected products, mainly A4 rank or higher, of "Kuroge Wagyu" with a good balance of lean and fat grown in a production environment, with both excellent production history and hygiene management.
+                                We provide carefully selected beef, mainly A4 or higher rank of "Japanese Black Beef" 
+                                with a good balance of lean and fat, that were grown in a good production environment 
+                                in both production history and hygiene management.
                             </p>
                         </li>
                         <li class="commit-list_item">
-                            <h3 class="commit-item__title">Domestic vegetables with high freshness</h3>
+                            <h3 class="commit-item__title">Extra fresh domestic vegetables</h3>
                             <p>
-                                Vegetables such as sanchu that are compatible with meat and Chinese cabbage used for homemade kimchi are carefully selected for their deliciousness, safety and security, and we use fresh domestic vegetables.
+                                Vegetables such as Sangchu, which goes well with meat, and Chinese cabbage used for homemade kimchi, are carefully selected for their taste and safety. We exclusively use domestic fresh vegetables.
                             </p>
                         </li>
                         <li class="commit-list_item">
-                            <h3 class="commit-item__title">Homemade sauce to bring out the taste</h3>
+                            <h3 class="commit-item__title">Homemade sauce that brings out Umami</h3>
                             <p>
-                                The six kinds of homemade sauces further enhance the original taste of Wagyu by using different types of sauces depending on the part of the meat and how to eat
+                                We bring out the Umami of Wagyu by separately using 6 kinds of homemade sauces 
+                                depending on the part of meat and its cooking style.
                             </p>
                         </li>
                         <li class="commit-list_item">
-                            <h3 class="commit-item__title">Homemade soup based on Okinawa Wagyu soup stock</h3>
+                            <h3 class="commit-item__title">Homemade soup of Okinawa Wagyu stock</h3>
                             <p>
-                                The soup made from beef muscle broth and chicken broth and mackerel broth, and the cold noodle soup whose umami is condensed by boiling over time, use plenty of beef streaks, chicken broth and flavored vegetables
+                                Our soup made from beef tendon, chicken and mackerel stock and our rich cold noodle soup are made from plenty of beef tendon, chicken and fresh vegetables and by simmering them for a long time.
                             </p>
                         </li>
                         <li class="commit-list_item">
-                            <h3 class="commit-item__title">Deep-tasting homemade kimchi</h3>
+                            <h3 class="commit-item__title">Rich-flavor homemade Kimchi</h3>
                             <p>
-                                Several kinds of shrimp are seasoned firmly with the base homemade yangnyeom (kimchi), and the fermentation period is calculated with thorough temperature control and flavor.
+                                It is seasoned with homemade Yangnyeon (Kimchi base) based on several kinds of shrimps. We control temperature and calculate fermentation period to have Umami to realize mild taste.
                             </p>
                         </li>
                     </ul>
@@ -202,9 +211,9 @@
 
             <!-- part -->
             <section id="part" class="part">
-                <h2 class="section-title">Taste of each part</h2>
+                <h2 class="section-title">Japanese Beef Chart</h2>
                 <figure class="part-img">
-                    <img src="./image/english/top/part-img_en.jpg" alt="yakiniku studio[dan] beef part Taste of each part">
+                    <img src="./image/english/part-img_en.jpg" alt="焼肉工房「團」 牛肉 部位 部位ごとの旨み">
                 </figure>
             </section>
             <!-- part end -->
@@ -212,28 +221,26 @@
 
             <!-- difference -->
             <section id="difference" class="difference">
-                <h2 class="section-title">
-                About "wagyu" and "domestic beef" 
-                    <br>
-                    <!-- "wagyu" and "domestic beef" -->
+                <h2 class="section-title section-en">
+                    About "Japanese beef"
                 </h2>
                 <div class="difference-block">
                     <ul class="difference-list"> 
                         <li class="difference-list__item">
-                            <h4 class="difference-title">Wagyu</h4>
+                            <h4 class="difference-title">Wagyu beef</h4>
                             <p class="difference-text">
-                                It refers to the breed name of a Japanese native cow that has been improved through repeated crossings based on Japanese native breeds, and only four are displayed as "Wagyu"
+                                "Wagyu" refers only to the 4 breeds that was improved by repetitive crossing of Japanese native breeds.
                             </p>
                         </li>
                         <li class="difference-list__item">
-                            <h4 class="difference-title">Domestic cattle</h4>
+                            <h4 class="difference-title">Domestically produced beef</h4>
                             <p class="difference-text">
-                                Regardless of the country of origin, place of origin, or breed, cows that have been bred for the longest period in Japan and are processed for meat in Japan are listed as “domestic cattle”.
+                                Beef (dressed meat) processed inside Japan that has spent the longest breeding period in Japan is displayed as "Domestically produced beef" regardless of the country of origin or breed.
                             </p>
                         </li>
                     </ul>
                     <div class="difference-img">
-                        <img src="./image/english/top/difference-map_en.jpg" alt="yakiniku studio[dan] Difference between 'wagyu' and 'domestic beef'">
+                        <img src="./image/english/difference-map_en.jpg" alt="焼肉工房「團」 「和牛」と「国産牛」の違い">
                     </div>
                 </div>
             </section>
@@ -242,33 +249,33 @@
 
             <!-- menu -->
             <section id="menu" class="menu">
-                <h2 class="section-title">Menu</h2>
+                <h2 class="section-title">MENU</h2>
                 <ul class="menu-list flex_box">
                     <li class="menu-list__item">
                         <a href="./menu/dinner_en.html">
-                            <img src="./image/top/dinner.jpg" alt="yakiniku studio[dan] dinner">
+                            <img src="./image/top/dinner.jpg" alt="焼肉工房「團」　ディナーメニュー">
                             <h5 class="menu-list__item-title">Dinner</h5>
-                            <p class="menu-list__item-title__text">You can enjoy from the rare parts of Wagyu beef, such as loin, ribs, and ichibo, to the side menu that focuses on the ingredients.</p>
+                            <p class="menu-list__item-title__text">You can enjoy from the rare parts of Wagyu beef, such as loin, ribs, and Ichibo, to the side menu, which we carefully selected from the ingredients.</p>
                         </a>
                     </li>
                     <li class="menu-list__item">
                         <a href="./menu/corse_en.html">
-                            <img src="./image/top/matsu_s.png" alt="yakiniku studio[dan] course">
+                            <img src="./image/top/matsu_s.png" alt="焼肉工房「團」 コース">
                             <h5 class="menu-list__item-title">Course</h5>
-                            <p class="menu-list__item-title__text">You can enjoy the course menu from fine meats to popular dishes and desserts.</p>
+                            <p class="menu-list__item-title__text">You can enjoy our course meal from fine meat to popular dish and dessert.</p>
                         </a>
                     </li>
                     <li class="menu-list__item">
                         <a href="./menu/lunch_en.html">
-                            <img src="./image/top/lunch.jpg" alt="yakiniku studio[dan] lunch">
+                            <img src="./image/top/lunch.jpg" alt="焼肉工房「團」 ランチ">
                             <h5 class="menu-list__item-title">Lunch</h5>
-                            <p class="menu-list__item-title__text">We offer a limited menu for lunch only, such as a beef bowl full of the taste of Japanese beef broth.</p>
+                            <p class="menu-list__item-title__text">We offer a limited menu for lunch only, such as a beef bowl full of Wagyu beef broth.</p>
                         </a>
                     </li>
                 </ul>
                 
                 <div id="allergy" class="content">
-                    <a class="js-modal-open" href="./image/english/top/allergy_en.pdf">About allergy▼</a>
+                    <a class="js-modal-open" href="./image/english/top/allergy_en.pdf">About food allergies▼</a>
                 </div>
                 <!-- <div class="modal js-modal">
                     <div class="modal__bg js-modal-close"></div>
@@ -283,7 +290,7 @@
 
             <!-- introduction -->
             <section id="introduction" class="introduction">
-                <h2 class="section-title">Store introduction</h2>
+                <h2 class="section-title">About us</h2>
                 <div class="introduction-details">
                     <div id="slider_main">
                         <ul>
@@ -291,8 +298,8 @@
                             <li><img src="./image/introduction/tableseki.jpg" alt="" /></li>
                             <li><img src="./image/introduction/madogawatablesaki.jpg" alt="" /></li>
                             <li><img src="./image/introduction/horigotatsuseki.jpg" alt="" /></li>
-                            <li><img src="./image/introduction/zashikiseki.jpg" alt="" /></li>
-                            <li><img src="./image/introduction/naikanzentai.jpg" alt="" /></li>
+                            <li><img src="./image/introduction/zashikiseki.jpg" alt="" /></li>                            
+                            <li><img src="./image/introduction/naikanzentai.jpg" alt="" /></li>                          
                         </ul>
                     </div><!--/#slide_main-->
                         
@@ -302,11 +309,11 @@
                             <li><img src="./image/introduction/tableseki.jpg" alt="" /></li>
                             <li><img src="./image/introduction/madogawatablesaki.jpg" alt="" /></li>
                             <li><img src="./image/introduction/horigotatsuseki.jpg" alt="" /></li>
-                            <li><img src="./image/introduction/zashikiseki.jpg" alt="" /></li>
-                            <li><img src="./image/introduction/naikanzentai.jpg" alt="" /></li>
+                            <li><img src="./image/introduction/zashikiseki.jpg" alt="" /></li>                            
+                            <li><img src="./image/introduction/naikanzentai.jpg" alt="" /></li> 
                         </ul>
                         <p class="introduction-text">
-                            It can be used according to the number of people and the scene, such as table seating for one person or a small number of people, and digging seats that can be used for up to 30 people.
+                            You can visit us according to the number of people and the scenes, such as table seats for one guest or a small number of guests, up to 30!
                         </p>
 
                     </div><!--/#slide_thumb-->
@@ -317,7 +324,7 @@
 
             <!-- info -->
             <!-- <section id="info" class="info">
-                <h6 class="info-title">information</h6>
+                <h6 class="info-title">News</h6>
                 <ul class="info-list">
                     <li class="info-list__item">
                         <dl>
@@ -345,6 +352,9 @@
                     </li>
                 </ul>
             </section> -->
+            <!-- info end -->
+
+            <!-- info -->
             <?php 
             //▼▼ 既存ページヘ埋め込み時はまるっとコピペ下さい （この行も含みページ最上部に）※.phpでかつUTF-8のページのみ可▼▼
             //※このページに対して既存のページのhtmlを記述する形でももちろんOKです。
@@ -493,27 +503,23 @@
                 </div>
             </section>
             <!-- /info end -->
-            <!-- info end -->
-            <!-- info end -->
-
 
             <!-- though -->
             <section id="thought" class="thought">
-                <h2 class="section-title">
-                    Vision of Yakiniku
-                    <br>
-                    Studio "dan"
+                <h2 class="section-title section-en">
+                    Our hope
                 </h2>
                 <p class="thought-text">
-                    Yukio Oyakawa, the founder, says "Okinawa Wagyu" and sauces and vegetables 
-                    that match the meat so that customers can say "Taste that can not be eaten at home" 
-                    "Eat with confidence" and above all "Delicious" I was particular about. 
-                    We always carry on conversations while encouraging delicious meat around the table in every era, 
-                    as the word “dan”, which is the name of the store, carries on the spirit of the store while firmly inheriting the thoughts of the predecessor. 
-                    We will continue to work hard every day so that we can serve you as a yakiniku restaurant.
+                    Yukio Oyakawa, our founder, strictly selected "Okinawa Wagyu beef" 
+                    as well as sauce and vegetables that matches it perfectly
+                    in order for our customers to be able to enjoy "safe, premium taste" and be satisfied.
+                    We observe the will of the predecessor and devote ourselves to become 
+                    the restaurant in which our customers can spend happy time over delicious meat
+                    regardless of era and just like the name of the restaurant 
+                    "Dan" which has the meaning of "calm / gather".
                 </p>
                 <div class="thought-img">
-                    <img src="./image/top/logo-2.png" alt="yakiniku studio[dan]">
+                    <p><img src="./image/top/logo-2.png" alt="焼肉工房「團」"></p>
                 </div>
             </section>
             <!-- though -->
@@ -522,7 +528,7 @@
             <!-- access -->
             <section id="access" class="access">
                 <h2 class="section-title">Access</h2>
-                <p>2-3-16 Oroku, Naha City, Okinawa Prefecture 901-0152</p>
+                <p>2-3-16, Oroku, Naha City, Okinawa, Japan</p>
                 <div class="map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.1879408011764!2d127.67298401495562!3d26.19056389710831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e569ac90946769%3A0xb7da3f88df348203!2z54S86IKJ5bel5oi_IOWcmA!5e0!3m2!1sja!2sjp!4v1576981483388!5m2!1sja!2sjp" width="1100px" height="600" style="border:0;" allowfullscreen=""></iframe>
                 </div>
@@ -532,56 +538,54 @@
 
             <!-- store -->
             <section id="store" class="store">
-                <h2  class="section-title">Store information</h2>
+                <h2  class="section-title">Information</h2>
                 <div class="store-inner">
                     <div class="store-details">
                         <dl class="store-details__item">
-                            <dt class="store-details__item-title style-effect">Address</dt>
+                            <dt class="store-details__item-title">Address</dt>
                             <dd class="store-details__item-text">
-                                〒901-0152  2-3-16 Oroku,
-                                <br>
-                                Naha City, Okinawa Prefecture
+                                2-3-16, Oroku, Naha City, Okinawa, Japan
                             </dd>
                         </dl>
                         <dl class="store-details__item">
                             <dt class="store-details__item-title style-effect_2">Access</dt>
                             <dd class="store-details__item-text">
-                                8 minutes by car from Naha Airport
+                                <span class="style-effect_4">8 minutes by car from Naha Airport</span>
                                 <br>
                                 13 minute walk from Yui Rail
                                 <br>
-                                Okuyamakoen Station
+                                Onoyama-koen Station
                             </dd>
                         </dl>
                         <dl class="store-details__item">
-                            <dt class="store-details__item-title">Parking</dt>
-                            <dd class="store-details__item-text">11 units</dd>
+                            <dt class="store-details__item-title">Parking Lot</dt>
+                            <dd class="store-details__item-text">11</dd>
                         </dl>
                         <dl class="store-details__item">
-                            <dt class="store-details__item-title">TEL</dt>
+                            <dt class="store-details__item-title">Phone</dt>
                             <dd class="store-details__item-text">
-                                <a href="tel:0988578919" class="tel">098-857-8919</a>
+                                <a href="tel:0988578919" class="tel">+81-50-3476-4726</a>
                             </dd>
                         </dl>
                         <dl class="store-details__item">
-                            <dt class="store-details__item-title style-effect">Hours</dt>
+                            <dt class="store-details__item-title">Opening Hours</dt>
                             <dd class="store-details__item-text">
-                                Lunch　11:00 〜 15:00（L.O.14:30）
+                                Lunch 11:00-15:00 (Last Call 14:30)
                                 <br>
-                                Dinner  17:00 〜 23:00（L.O.22:00）
+                                Dinner 17:00-23:00 (Last Call 22:00)
                             </dd>
                         </dl>
                         <dl class="store-details__item">
-                            <dt class="store-details__item-title">Seats</dt>
-                            <dd class="store-details__item-text">60 seats</dd>
+                            <dt class="store-details__item-title">Number of Seats</dt>
+                            <dd class="store-details__item-text style-effect">60</dd>
                         </dl>
                         <dl class="store-details__item">
-                            <dt class="store-details__item-title">Holiday</dt>
-                            <dd class="store-details__item-text">Tuesday</dd>
+                            <dt class="store-details__item-title">Regular holiday</dt>
+                            <dd class="store-details__item-text style-effect">Tuesday</dd>
                         </dl>
                     </div>
                     <div class="store-img">
-                        <img src="./image/store/store_img.jpg" alt="yakiniku studio[dan] store information appearance" class="store_img">
+                        <img src="./image/store/store_img.jpg" alt="焼肉工房「團」 店舗情報 外観" class="store_img">
                     </div>
                 </div>
                 <div class="share">
@@ -614,14 +618,6 @@
 
     <!-- footer -->
     <footer>
-        <ul>
-            <li><a href="#menu" class="reservation-text">Menu</a></li>
-            <li><a href="#introduction" class="reservation-text">Store information</a></li>
-            <li><a href="#info" class="reservation-text">Notice</a></li>
-            <li><a href="#store" class="reservation-text">Contact</a></li>
-            <li><a href="#" class="reservation-text">Online booking</a></li>
-            <li><a href="sitemap/sitemap_en.html" class="reservation-text">Site map</a></li>
-        </ul>
         <p>Copyright(c)</p>
     </footer>
     <!-- footer end -->

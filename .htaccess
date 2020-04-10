@@ -2,7 +2,7 @@ RewriteEngine on
 
 RewriteCond %{REQUEST_URI} !/sp/
 RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|iPad|Android|Windows\ Phone)
-RewriteRule ^(.*)$ sp/$1 [R]
+RewriteRule ^(.*)$ yakiniku-dan/sp/$1 [R]
 RewriteBase /
 
 RewriteCond %{REQUEST_URI} /sp/

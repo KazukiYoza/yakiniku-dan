@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta name="keywords" content="おきなわ和牛,国産野菜,自家製ダレ,自家製スープ,自家製キムチ,ランチ,ディナー,那覇市,小禄,焼肉工房「團」">
+    <meta name="description" content="お客様が「家庭では食べられない味」「安心して食べられる」 そして、なによりも「美味しい」と言って頂けるように「おきなわ和牛」とその肉に合うタレや野菜にまでこだわり提供いたします。">
+    <title>ランチメニュー | 焼肉工房「團」</title>
+    <link rel="stylesheet" href="../css/sanitize.css">
+    <link rel="stylesheet" href="../css/slick_sp.css">
+    <link rel="stylesheet" href="../css/slick-theme_sp.css">
+    <link rel="stylesheet" href="../css/style_sp.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../image/top/favicon.png">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="header_inner">
+            <div class="header-logo">
+                <a href="/index.html">
+                    <img src="../image/top/logo.png" alt="焼肉工房「團」">
+                </a>
+            </div>
+            <nav>
+                <ul class="header-nav__list">
+                    <li class="header-nav__list-item">
+                        <a href="#menu" class="header-nav__list-item__text">菜單</a>
+                    </li>
+                    <li class="header-nav__list-item">
+                        <a href="#introduction" class="header-nav__list-item__text">店鋪資訊</a>
+                    </li>
+                    <li class="header-nav__list-item">
+                        <a href="#info" class="header-nav__list-item__text">最新消息</a>
+                    </li>
+                    <li class="header-nav__list-item">
+                        <a href="#store" class="header-nav__list-item__text">聯絡我們</a>
+                    </li>
+                    <li class="header-nav__list-item dropdown-menu">
+                        <a class="header-nav__list-item__text dropdown-menu__title"><i class="fas fa-globe"></i>Language</a>
+                        <ul class="dropdown-menu__list">
+                            <li class="dropdown-menu__list-item">
+                                <a href="../index-en.php" class="dropdown-menu__list-item__link">
+                                    English
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </li>
+                            <li class="dropdown-menu__list-item">
+                                <a href="../index.php" class="dropdown-menu__list-item__link">
+                                    日本語
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="reservation">
+                        <a href="#" class="reservation-text reservation-ja">線上預約</a>
+                    </li>
+                    <li>
+                        <div class="header-nav__language-button">
+                            <p class="header-nav__language-button__image"><img src="../image/top/language.png" alt=""></p>
+                            <span>language</span>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- ドロワーメニュー -->
+                        <div class="header-nav__menu-button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <small>MENU</small>
+                        </div> 
+                    </li>
+                </ul>
+            </nav>  
+        </div>
+        <div class="header-nav__menu">
+            <ul class="header-nav__menu-list">
+                <li class="header-nav__menu-item">
+                    <a href="#commit" class="header-nav__menu-item__text">燒肉團的堅持</a>
+                </li>
+                <li class="header-nav__menu-item">
+                    <a href="#part" class="header-nav__menu-item__text">不同部位的風味</a>
+                </li>
+                <li class="header-nav__menu-item">
+                    <a href="#difference" class="header-nav__menu-item__text">和牛跟日本國產牛的不同</a>
+                </li>
+                <li class="header-nav__menu-item">
+                    <a href="#menu" class="header-nav__menu-item__text">菜單</a>
+                </li>
+                <li class="header-nav__menu-item">
+                    <a href="#allergy" class="header-nav__menu-item__text">食物過敏</a>
+                </li>
+                <li class="header-nav__menu-item">
+                    <a href="#introduction" class="header-nav__menu-item__text">店舖資訊</a>
+                </li>
+                <li class="header-nav__menu-item">
+                    <a href="#info" class="header-nav__menu-item__text">最新消息</a>
+                </li>
+                <li class="header-nav__menu-item">
+                    <a href="#thought" class="header-nav__menu-item__text">我們的理想</a>
+                </li>
+                <li class="header-nav__menu-item">
+                    <a href="#access" class="header-nav__menu-item__text">交通方式</a>
+                </li>
+                <li class="header-nav__menu-item">
+                    <a href="#store" class="header-nav__menu-item__text">店鋪資訊</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="header-nav__language">
+            <ul class="header-nav__language-list">
+                <li class="header-nav__language-item">
+                    <a href="./index-en_sp.html" class="header-nav__language-item__text">English</a>
+                </li>
+                <li class="header-nav__language-item">
+                    <a href="#" class="header-nav__language-item__text">Japanese</a>
+                </li>
+                <li class="header-nav__language-item">
+                    <a href="#" class="header-nav__language-item__text">Chinese</a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+        <!-- header end -->
+    <!-- main -->
+    <main>
+
+        <div class="wrap padding">
+            <img src="../image/chinese/lunch/lunch_ch.jpg" alt="焼肉工房「團」 ランチメニュー">
+        </div>
+
+    </main>
+    <!-- main end -->
+
+    
+    <script src="../js/jquery.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/slick.js"></script>
+    <script src="../js/style_.js"></script>
+</body>
+</html>
